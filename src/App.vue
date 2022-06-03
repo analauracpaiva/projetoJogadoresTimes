@@ -1,17 +1,11 @@
+<script setup>
+import HeaderComp from "@/components/template/HeaderComp.vue";
+</script>
+
 <template>
-<header>
-    <div class="menu-esquerdo">
-      <span> <RouterLink to="/">Home</RouterLink>span>
-      <span>|</span>
-      <span> <RouterLink to="/">Times</RouterLink>span>
-      <span>|</span>
-      <span> <RouterLink to="/">Jogadores</RouterLink>span>
-    </div>
-    <div class="menu-direito">
-      <span>Sair</span>
-    </div>
-  </header>
+  <HeaderComp />
   <RouterView />
+  <footer>Rodapé</footer>
 </template>
 
 <style>
@@ -22,6 +16,11 @@
   margin: 0 auto;
   font-weight: normal;
   height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 header,
